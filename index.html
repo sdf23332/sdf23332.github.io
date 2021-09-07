@@ -71,9 +71,57 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-mysql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-mysql基本操作" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/09/07/mysql/" class="article-date">
+    <a href="/2021/09/07/mysql%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="article-date">
+  <time class="dt-published" datetime="2021-09-07T09:11:26.000Z" itemprop="datePublished">2021-09-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/07/mysql%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">mysql基本操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一、库操作<br>（1）建库 create      database    数据库名<br>（2）选择库 use    库名<br>（3）删除库 drop    database    数据库名<br>（4）<br>二、表操作<br>（1）建表：先进入库，在创建表<br>    use    库名<br>    create table 表名（字段名1 数据类型 约束，字段名2 数据类型，……）</p>
+<pre><code>最后一个字段不要加逗号“，”，约束是非必要的
+约束关键字：非空约束：not null
+          默认值约束：default
+          主键约束：primary key
+            唯一约束：unique
+            标识列（自动增长）：auto_increment
+            外键约束：foreign key
+</code></pre>
+<p>（2）、插入数据：insert into 表名（值1，值2）插入一条<br>              insert into 表名（值1，值2），（值3，值4），（值5，值6）…;<br>      将表二符合条件的数据插入表一中：<br>      insert into 表一 select * from 表二 where 条件<br>（3）、删除数据：delete from 表名 （只删除数据，不删表结构，标识列不会清零）<br>      truncate （只删数据不删表结构，标识列会清零）<br>      drop （直接删除表结构）<br>    删除一组数据：delete from 表名 where 条件<br>（4）、该数据：update 表名 set 要修改的列=修改的值 where 条件<br>（5）、查数据：一切根源：select * from 表名<br>            逻辑词：and or not<br>            分组：group by、having（分组后再过滤）<br>            正排序：select * from 表名 order by 列名 asc<br>            倒序：    select * from 表名 order by 列名 desc<br>（6）、mysql连接:INNER JOIN（内连接,或等值连接）：获取两个表中字段匹配关系的记              录。（select * from t1 inner join t2 on t1.公共列=t2.公共列）<br>              LEFT JOIN（左连接）：获取左表所有记录，即使右表没有对应匹配的记                  录。<br>              RIGHT JOIN（右连接）： 与 LEFT JOIN 相反，用于获取右表所有记                  录，即使左表没有对应匹配的记录。<br>（7）、聚合函数：max最大、min最小、sun求和、avg平均数、count计数</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/07/mysql%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckt9wf9630000akqd7wimc10h" data-title="mysql基本操作" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-mysql/mysql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/07/mysql/mysql/" class="article-date">
   <time class="dt-published" datetime="2021-09-07T09:08:06.000Z" itemprop="datePublished">2021-09-07</time>
 </a>
     
@@ -85,7 +133,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/07/mysql/">mysql</a>
+      <a class="p-name article-title" href="/2021/09/07/mysql/mysql/">mysql</a>
     </h1>
   
 
@@ -108,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/07/mysql/" data-id="ckt9upi6700003cqd3wwvet8z" data-title="mysql" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/07/mysql/mysql/" data-id="ckt9wf9670001akqdgkkwdlwh" data-title="mysql" class="article-share-link">Share</a>
       
       
       
@@ -825,7 +873,11 @@ def test_login_error(self):
       <ul>
         
           <li>
-            <a href="/2021/09/07/mysql/">mysql</a>
+            <a href="/2021/09/07/mysql%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">mysql基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/07/mysql/mysql/">mysql</a>
           </li>
         
           <li>
@@ -838,10 +890,6 @@ def test_login_error(self):
         
           <li>
             <a href="/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/">app案例整合实现代码</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88/">app案例整合</a>
           </li>
         
       </ul>
