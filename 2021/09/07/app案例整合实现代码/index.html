@@ -14,7 +14,7 @@
 <meta property="og:description" content="案例整合一、Pageobject+unittest在前面我们都是基于线性模型来编写测试脚本，而且元素定位方式和属性值都是写死的。在业务场景简单的情况下这样写无可厚非，但是一旦遇到产品需求变更，业务逻辑比较复杂需要维护的时候就非常麻烦了，那么该如何应对这种情况呢？1.场景案例前面我们所学，测试考研帮App登录场景，按照线性模型来构造出脚本如下：考研帮登录测试场景脚本：from appium impo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-07T01:02:18.000Z">
-<meta property="article:modified_time" content="2021-09-07T01:03:46.028Z">
+<meta property="article:modified_time" content="2021-09-07T01:10:19.229Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -263,7 +263,7 @@ def check_skipBtn(self):
         logging.info(&#39;no skipBtn&#39;)
     else:
         skipBtn.click()
-
+   
 def getTime(self):
     self.now=time.strftime(&quot;%Y-%m-%d %H_%M_%S&quot;)
     return self.now
