@@ -6,17 +6,21 @@
   
   <title>linux | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="1、什么是linux：Unix是一个强大的多用户、多任务操作系统。于1969年在AT&amp;T的贝尔实验室开发。UNIX的商标权由国际开放标准组织（The Open Group）所拥有。UNIX操作系统是商业版，需要收费，价格比Microsoft Windows正版要贵一些。2、linux主流版本：">
+  <meta name="description" content="一、什么是linux：    Unix是一个强大的多用户、多任务操作系统。    于1969年在AT&amp;T的贝尔实验室开发。    UNIX的商标权由国际开放标准组织（The Open Group）所有。    UNIX操作系统是商业版，需要收费，价格比Microsoft Windows    正版要贵一些。二、linux主流版本：  三、linux目录结构  四、linux简单指令 ​">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux">
 <meta property="og:url" content="http://example.com/2021/09/07/linux/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1、什么是linux：Unix是一个强大的多用户、多任务操作系统。于1969年在AT&amp;T的贝尔实验室开发。UNIX的商标权由国际开放标准组织（The Open Group）所拥有。UNIX操作系统是商业版，需要收费，价格比Microsoft Windows正版要贵一些。2、linux主流版本：">
+<meta property="og:description" content="一、什么是linux：    Unix是一个强大的多用户、多任务操作系统。    于1969年在AT&amp;T的贝尔实验室开发。    UNIX的商标权由国际开放标准组织（The Open Group）所有。    UNIX操作系统是商业版，需要收费，价格比Microsoft Windows    正版要贵一些。二、linux主流版本：  三、linux目录结构  四、linux简单指令 ​">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.imgdb.cn/item/61373f2e44eaada739cbfeae.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613867f344eaada739d16270.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/61386bc144eaada739d81ba8.png">
 <meta property="article:published_time" content="2021-09-07T10:27:12.000Z">
-<meta property="article:modified_time" content="2021-09-07T10:33:14.416Z">
+<meta property="article:modified_time" content="2021-09-08T08:03:45.516Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/61373f2e44eaada739cbfeae.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -95,7 +99,45 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>1、什么是linux：<br>Unix是一个强大的多用户、多任务操作系统。<br>于1969年在AT&amp;T的贝尔实验室开发。<br>UNIX的商标权由国际开放标准组织（The Open Group）所拥有。<br>UNIX操作系统是商业版，需要收费，价格比Microsoft Windows正版要贵一些。<br>2、linux主流版本：</p>
+        <p>一、什么是linux：<br>    Unix是一个强大的多用户、多任务操作系统。<br>    于1969年在AT&amp;T的贝尔实验室开发。<br>    UNIX的商标权由国际开放标准组织（The Open Group）所有。<br>    UNIX操作系统是商业版，需要收费，价格比Microsoft Windows    正版要贵一些。<br>二、linux主流版本：</p>
+<p><img src="https://pic.imgdb.cn/item/61373f2e44eaada739cbfeae.png"></p>
+<p>三、linux目录结构</p>
+<p><img src="https://pic.imgdb.cn/item/613867f344eaada739d16270.png"></p>
+<p>四、linux简单指令</p>
+<p>​    1、访问命令：</p>
+<p>​            cd    文件夹名    ：访问某个文件夹</p>
+<p>​            cd    文件夹1/文件夹2    ：访问联级目录</p>
+<p>​            cd    ../    :返回上一级</p>
+<p>​            cd    ~    ：返回root登陆界面</p>
+<p>​    2、列出当前目录的文件与文件夹</p>
+<p>​            ls    ：只列出当前目录下的文件和文件夹的名字</p>
+<p>​            ll    ：列出当前目录下的文件夹与文件的名字和信息</p>
+<p>​    3、创建文件夹</p>
+<p>​            mkdir    文件夹名    ：在当前目录下创建文件夹</p>
+<p>​            mkdir    -p    文件夹1/文件夹2/文件夹3    ：在当前目录下创建文件夹1，然后在文件夹1里创建文件夹2，文件夹2里创建文件夹3</p>
+<p>​    4、删除</p>
+<p>​            rmdir    文件夹名    ：删除空的文件夹</p>
+<p>​            rm    文件名    :    询问式删除</p>
+<p>​            rm    -rf    ：不询问式删除</p>
+<p>​            rm    -rf    *    ：自杀式删除</p>
+<p>​            rm    -rf    ./*    ：把当前目录下所有文件信息删除掉</p>
+<p>​    5、复制、粘贴</p>
+<p>​            cp    源文件    目标文件</p>
+<p>​    6、剪切、移动</p>
+<p>​            mv    源文件    目标路径（文件夹）</p>
+<p>​    7、打包压缩</p>
+<p>​    <img src="https://pic.imgdb.cn/item/61386bc144eaada739d81ba8.png"></p>
+<p>​            压缩格式：    tar    -czvf    压缩包.gz    ./*</p>
+<p>​            解压：tar    -xvf    压缩包名。gz</p>
+<p>​    8、vi与vim文件编辑</p>
+<p>​            （1）、vi    文件名    ：进入文件视图界面</p>
+<p>​            （2）、按下    “i”    键进入编辑界面，往里面输入内容</p>
+<p>​            （3）、输入完保存文件内容：①按下：esc    ②按下：”:”    ③    输入：wq    ④按下回车键</p>
+<p>​            （4）、不想保存：①从上面第二部开始    ②输入：q！    ③回车</p>
+<p>​    Vim和vi指令用法是一样的，最直接的区别就是看代码的时候：</p>
+<p>​    Vi：整个字体都是白色</p>
+<p>​    Vim：会有其他颜色</p>
+<p>​    </p>
 
       
     </div>
