@@ -71,6 +71,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-web理论和网络" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/" class="article-date">
+  <time class="dt-published" datetime="2021-09-08T08:35:44.000Z" itemprop="datePublished">2021-09-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/">web理论和网络</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一、协议</p>
+<p>​    数据通信协议的定义：决定数据的格式和传输的一组规则或者一组惯例</p>
+<p>二、OSI模型、TCP/IP模型</p>
+<p>​    1、 OSI是Open System Interconnection的缩写，意为开放式系统互联。</p>
+<p>​        国际标准化组织（ISO）制定了OSI模型。这个模型把网络通信的工作分为7层，分别是物理层、数据链路层、网络        层、传输层、会话层、表示层和应用层。</p>
+<p><img src="https://pic.imgdb.cn/item/6138774e44eaada739ed2c46.png"></p>
+<pre><code>2、TCP/IP协议：TCP/IP是20世纪70年代中期美国国防部为ARPANET开发的网络体系结构
+</code></pre>
+<img src="https://pic.imgdb.cn/item/613877f744eaada739ee42ba.png" style="zoom:80%;" />                    
+
+<p>​    3、TCP/IP与OSI模型的比较：</p>
+<pre><code>     相同：两者都是以协议栈的概念为基础、协议栈中的协议批次互相独立、下层对上层服务
+</code></pre>
+<p>​        不同：OSI是先有模型，TCP/IP是先有协议后有模型</p>
+<p>​        OSI适用于各种协议栈；TCP/IP只适用于TCP/IP网络</p>
+<p>​        层次数量不同<br>​    4、TCP/IP 体系中的传输层<br>​        （1）、用户数据报协议UDP    (User Datagram Protocol)<br>​        （2）、传输控制协议TCP    (Transmission Control Protocol)<br>​    5、用三次握手建立TCP连接<br><img src="https://pic.imgdb.cn/item/61387a8644eaada739f2d22a.png"><br>      用四次握手结束连接<br><img src="https://pic.imgdb.cn/item/61387b3144eaada739f40ddf.png"><br>三、端口<br>    端口就是运输层服务访问点(TSAP)。<br>    端口的作用就是让应用层的各种应用进程都能将其数据通过端口向下交付给运输层，以及让运     输层知道应当将其报文段中的数据向上通过端口交付给应用层相应的进程。<br>    从这个意义上讲，端口是用来标志应用层的进程<br>四、ip地址</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/" data-id="cktb9xbca0000soqdh5th8deu" data-title="web理论和网络" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-linux/linux" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/07/linux/linux/" class="article-date">
@@ -829,67 +883,6 @@ def test_login_error(self):
 
 
   
-    <article id="post-app自动化/app案例整合" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88/" class="article-date">
-  <time class="dt-published" datetime="2021-09-07T00:58:41.000Z" itemprop="datePublished">2021-09-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88/">app案例整合</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>线性模型：<br>    1.配置参数<br>    2.日志文件<br>    3.脚本   启动、业务<br>解决：混乱</p>
-<p>一、pageobject设计模式<br>步骤：<br>1.设置程序/app启动单独封装一个模块：desired_caps.py</p>
-<pre><code>注意：设置yaml参数里面添加两个值：——设置设备键盘
-    unicodeKeyboard: True
-    resetKeyboard: True
-         读取：
-    desired_caps[&#39;unicodeKeyboard&#39;]=data[&#39;unicodeKeyboard&#39;]
-        desired_caps[&#39;resetKeyboard&#39;]=data[&#39;resetKeyboard&#39;]
- 
-  在模块里面调用一下：判断设备/程序能否启动？
-</code></pre>
-<p>2.设置基类：BaseView.py<br>    1.初始化driver<br>    2.获取所有元素的函数</p>
-<p>3.写的基础公共模块：common_fun.py<br>    1.继承——&gt;BaseView—&gt;获取driver、定位元素<br>    2.检查更新、跳过的函数</p>
-<pre><code>在模块里面调用取消更新/跳过的函数来测试一下？？？
-</code></pre>
-<p>4.写登录脚本：loginView.py<br>    1.继承——common—&gt;获取driver、定位元素<br>    2.编写loging_action函数：<br>        1.调用取消更新、跳过的函数<br>        2.输入用户名、密码、点击登录</p>
-<p>从单一的线性—-》pageobject模式设计    1—-》4个模块</p>
-<p>二、使用unitTest编写测试用例<br>    1.实现一个myunit.py脚本 —》继承 unittest.TestCase<br>        setup函数<br>            开始–》获取driver<br>        tearDown函数<br>            关闭—》</p>
-<pre><code>2.实现一个test_login.py脚本---&gt;继承myunit里面的startEnd
-    编写测试用例，以test开头
-</code></pre>
-<p>三、整合案例——》通过BsttestRunner生成测试报告<br>  webDriver生成测试报告：<br>    selenium—–》appium—–&gt;自动化脚本—&gt;pageobject模式<br>    unittest——&gt;unittest—&gt;执行测试用例<br>        BsttestRunner—-》生成测试报告</p>
-<p>实现步骤：<br>    1.配置yaml的参数：appname: kaoyan3.1.0.apk   路径在当前项目里面<br>    2.编写设备/程序启动脚本：desired_caps.py<br>    3.编写基础类的脚本<br>        1.初始化driver<br>        2.元素的定位<br>    4.编写common_fun.py的脚本<br>    5.编写login登录的脚本<br>    6.读取csv文件<br>    7.编写测试用例脚本<br>    8.生成测试报表</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88/" data-id="ckt9tlj5k000094qdc9ln98n4" data-title="app案例整合" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -926,6 +919,10 @@ def test_login_error(self):
       <ul>
         
           <li>
+            <a href="/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/">web理论和网络</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/07/linux/linux/">linux</a>
           </li>
         
@@ -939,10 +936,6 @@ def test_login_error(self):
         
           <li>
             <a href="/2021/09/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/">接口测试</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/07/mysql/mysql%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">mysql基本操作</a>
           </li>
         
       </ul>
