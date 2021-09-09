@@ -71,6 +71,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-http协议" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/http%E5%8D%8F%E8%AE%AE/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T06:19:09.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/http%E5%8D%8F%E8%AE%AE/">http协议</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一、http协议简介<br>    超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的www文件都必须遵守这个标准。设计http最初的目的是为了提供一种发布和接受HTML（超文本标记语言）页面方法。<br>    http协议在网络osi模型中属于应用层协议，应用层协议除了 HTTP 还有：FTP，<br>SMTP，DNS，RIP，Telnet 等。<br>    HTTP 协议工作于客户端—服务端架构上。浏览器作为 HTTP 客户端通过 URL(网址) 向<br>HTTP 服务端（即 Web 服务器） 发送请求。<br>二、超文本<br>    超文本英文名称叫做 Hypertext，我们在浏览器里面看到的网页就是超文本解析而成的，<br>其网页源代码是一系 列 HTML 代码，里面包含了一系列标签，如 img 显示图片，p 指定显<br>示段落等，浏览器解析这些标签后便形成了我们平常看到的网页，而这网页的源代码 HTML<br>就可以称作超文本。<br>例如我们在 Chrome 浏览器里面打开如百度页面，右键点击”查看源代码”，这些源代<br>码都是超文本。<br>三、什么是url<br>    我们在浏览器的地址栏里输入的网站地址叫做 URL (Uniform Resource Locator，统<br>一资源定位符)。就像每家每 户都有一个门牌地址一样，每个网页也都有一个 Internet 地<br>址（如：<a target="_blank" rel="noopener" href="http://www.baidu.com)./">http://www.baidu.com）。</a><br>当你在浏览器的 地址框中输入一个 URL 或是单击一个超级链接时，URL 就确定了要浏<br>览的地址。浏览器通过超文本传输协议(HTTP)， 将 Web 服务器上站点的网页代码提取出<br>来，并翻译成漂亮的网页。<br>四、
+    </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/http%E5%8D%8F%E8%AE%AE/" data-id="cktcs18w50000mgqdhm8z2itr" data-title="http协议" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-web理论和网络" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/" class="article-date">
@@ -512,378 +552,6 @@
 
 
   
-    <article id="post-app自动化/app案例整合实现代码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/" class="article-date">
-  <time class="dt-published" datetime="2021-09-07T01:02:18.000Z" itemprop="datePublished">2021-09-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/">app案例整合实现代码</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>案例整合<br>一、Pageobject+unittest<br>在前面我们都是基于线性模型来编写测试脚本，而且元素定位方式和属性值都是写死的。在业务场景简单的情况下这样写无可厚非，但是一旦遇到产品需求变更，业务逻辑比较复杂需要维护的时候就非常麻烦了，那么该如何应对这种情况呢？<br>1.场景案例<br>前面我们所学，测试考研帮App登录场景，按照线性模型来构造出脚本如下：<br>考研帮登录测试场景脚本：<br>from appium import webdriver<br>import yaml<br>from selenium.common.exceptions import NoSuchElementException<br>import logging<br>import logging.config</p>
-<p>CON_LOG=’./log/log.conf’<br>logging.config.fileConfig(CON_LOG)<br>logging=logging.getLogger()</p>
-<p>stream=open(‘./yaml/desired_caps.yaml’,’r’)<br>data=yaml.load(stream)</p>
-<p>desired_caps={}<br>desired_caps[‘platformName’]=data[‘platformName’]</p>
-<p>desired_caps[‘platformVersion’]=data[‘platformVersion’]<br>desired_caps[‘deviceName’]=data[‘deviceName’]</p>
-<p>desired_caps[‘app’]=data[‘app’]<br>desired_caps[‘noReset’]=data[‘noReset’]</p>
-<p>desired_caps[‘appPackage’]=data[‘appPackage’]<br>desired_caps[‘appActivity’]=data[‘appActivity’]</p>
-<p>driver = webdriver.Remote(‘http://‘+str(data[‘ip’])+’:’+str(data[‘port’])+’/wd/hub’, desired_caps)</p>
-<p>def check_updateBtn():<br>    logging.info(“check_updateBtn”)<br>    try:<br>        element = driver.find_element_by_id(‘android:id/button2’)<br>    except NoSuchElementException:<br>        logging.info(‘update element is not found!’)<br>    else:<br>        element.click()</p>
-<p>def check_skipBtn():<br>    logging.info(“check_skipBtn”)<br>    try:<br>        element = driver.find_element_by_id(‘com.tal.kaoyan:id/tv_skip’)<br>    except NoSuchElementException:<br>        logging.info(‘skipBtn element is not found!’)<br>    else:<br>        element.click()</p>
-<p>check_updateBtn()<br>check_skipBtn()</p>
-<p>logging.info(‘start login…’)</p>
-<p>driver.find_element_by_id(‘com.tal.kaoyan:id/login_email_edittext’).send_keys(‘liubo10010’)<br>driver.find_element_by_id(‘com.tal.kaoyan:id/login_password_edittext’).send_keys(‘liubo10010’)<br>driver.find_element_by_id(‘com.tal.kaoyan:id/login_login_btn’).click()<br>logging.info(‘login finished’)</p>
-<p>1)案例分析<br>上面的脚本看似都比较完善，有了log采集，参数配置、启动时页面元素自动检测。但是也存在一些不足之处：<br>公共模块和业务模块混合在一起显得代码冗余等<br>测试场景单一（如果要实现如下测试场景该怎么办？）<br>元素定位属性和代码混杂在一起<br>以上这些都是需要优化的地方。<br>测试场景    操作步骤    预期结果<br>多账号登录    不同的用户名密码来进行登录    能够正常登录<br>异常登录    用户名或者密码错误、或者为空进行登录，    登录失败，同时界面要给出相应的提示<br>注册    点击注册，然后进行注册信息填写    能够注册成功<br>2)重构优化思路<br>将一些公共的内容（如：check_updateBtn，check_skipBtn,capability）抽离出来。<br>元素定位方法和元素属性值与业务代码分离<br>登录功能模块封装为一个独立的模块<br>使用unittest进行用例综合管理<br>3)Page Object<br>Page Object是Selenium自动化测试项目开发实践的最佳设计模式之一，通过对界面元素的封装减少冗余代码，同时在后期维护中，若元素定位发生变化，只需要调整页面元素封装的代码，提高测试用例的可维护性。<br>2.代码实现<br>封装App启动配置信息<br>desired_caps.py<br>import yaml<br>import logging.config<br>from appium import webdriver</p>
-<p>#把app启动封装到一个类里面</p>
-<p>CON_LOG = ‘../log/log.conf’<br>logging.config.fileConfig(CON_LOG)<br>logging = logging.getLogger()</p>
-<p>def appium_desired():</p>
-<pre><code>stream = open(&#39;../yaml/desired_caps.yaml&#39;, &#39;r&#39;)
-data = yaml.load(stream)
-
-desired_caps=&#123;&#125;
-desired_caps[&#39;platformName&#39;]=data[&#39;platformName&#39;]
-
-desired_caps[&#39;platformVersion&#39;]=data[&#39;platformVersion&#39;]
-desired_caps[&#39;deviceName&#39;]=data[&#39;deviceName&#39;]
-
-desired_caps[&#39;app&#39;]=data[&#39;app&#39;]
-desired_caps[&#39;noReset&#39;]=data[&#39;noReset&#39;]
-
-desired_caps[&#39;unicodeKeyboard&#39;]=data[&#39;unicodeKeyboard&#39;]
-desired_caps[&#39;resetKeyboard&#39;]=data[&#39;resetKeyboard&#39;]
-
-desired_caps[&#39;appPackage&#39;]=data[&#39;appPackage&#39;]
-desired_caps[&#39;appActivity&#39;]=data[&#39;appActivity&#39;]
-
-logging.info(&#39;start run app...&#39;)
-driver = webdriver.Remote(&#39;http://&#39;+str(data[&#39;ip&#39;])+&#39;:&#39;+str(data[&#39;port&#39;])+&#39;/wd/hub&#39;, desired_caps)
-
-driver.implicitly_wait(8)
-return driver
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    appium_desired()</p>
-<p>记得在原来的yaml配置表desired_caps.yaml补充如下内容：<br>unicodeKeyboard: True<br>resetKeyboard: True</p>
-<p>封装基类： BaseView.py<br>1.初始化——获取driver<br>2.写一个获取所有元素的函数<br>#封装对应基类<br>class BaseView(object):<br>    def <strong>init</strong>(self,driver):<br>        self.driver=driver</p>
-<pre><code>def find_element(self,*loc):
-    return self.driver.find_element(*loc)
-</code></pre>
-<p>封装通用公共类 common_fun.py<br>from Base_View import *<br>from desired_caps import *<br>from selenium.common.exceptions import NoSuchElementException<br>import logging<br>from selenium.webdriver.common.by import By</p>
-<p>class Common(BaseView):<br>    cancelBtn=(By.ID,’android:id/button2’)<br>    skipBtn=(By.ID,’com.tal.kaoyan:id/tv_skip’)</p>
-<pre><code>def check_cancelBtn(self):
-    logging.info(&#39;==========check_cancelBtn=========&#39;)
-    try:
-        cancelBtn = self.driver.find_element(*self.cancelBtn)
-    except NoSuchElementException:
-        logging.info(&#39;no cancelBtn&#39;)
-    else:
-        cancelBtn.click()
-
-def check_skipBtn(self):
-    logging.info(&#39;=========check skipBtn=============&#39;)
-
-    try:
-        skipBtn = self.driver.find_element(*self.skipBtn)
-    except NoSuchElementException:
-        logging.info(&#39;no skipBtn&#39;)
-    else:
-        skipBtn.click()
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    driver=appium_desired()<br>    com=Common(driver)<br>    com.check_cancelBtn()<br>    com.check_skipBtn()</p>
-<p>封装登录操作 loginView.py<br>import logging<br>from common_fun import *<br>from  desired_caps import *<br>from selenium.webdriver.common.by import By</p>
-<p>class LoginView(Common):</p>
-<pre><code>username_type=(By.ID,&#39;com.tal.kaoyan:id/login_email_edittext&#39;)
-password_type=(By.ID,&#39;com.tal.kaoyan:id/login_password_edittext&#39;)
-loginBtn=(By.ID,&#39;com.tal.kaoyan:id/login_login_btn&#39;)
-
-
-def login_action(self,username,password):
-    self.check_cancelBtn()
-    self.check_skipBtn()
-
-    logging.info(&#39;===============login===============&#39;)
-    logging.info(&#39;input username:%s&#39;%username)
-    self.driver.find_element(*self.username_type).send_keys(username)
-
-    logging.info(&#39;input password:%s&#39;%password)
-    self.driver.find_element(*self.password_type).send_keys(password)
-
-    logging.info(&#39;click loginBtn.&#39;)
-    self.driver.find_element(*self.loginBtn).click()
-    logging.info(&#39;login finished &#39;)
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    driver=appium_desired()<br>    l=LoginView(driver)<br>    l.login_action(‘liubo10010’,’liubo10010’)</p>
-<p>3.unittest用例封装<br>测试场景：使用如下账号进行分别登录测试<br>用户名    密码<br>Liubo10010    Liubo10010<br>666    222<br>1.封装用例启动、结束时的配置： myunit.py<br>import unittest<br>from appium_Test4.page_object.desired_caps import appium_desired<br>import logging<br>from time import sleep</p>
-<p>#unitTest创建与销毁<br>class StartEnd(unittest.TestCase):<br>    def setUp(self):<br>        logging.info(‘=====setUp====’)<br>        self.driver=appium_desired()</p>
-<pre><code>def tearDown(self):
-    logging.info(&#39;====tearDown====&#39;)
-    sleep(5)
-    self.driver.close_app()
-</code></pre>
-<p>2.用例封装 test_login.py<br>from  appium_Test4.unitTest.myunit import StartEnd<br>from appium_Test4.page_object.loginView import LoginView<br>import unittest<br>import logging</p>
-<p>class TestLogin(StartEnd):</p>
-<pre><code>def test_login_liubo10010(self):
-    logging.info(&#39;=========test_login_liubo10010============&#39;)
-    l=LoginView(self.driver)
-    l.login_action(&#39;liubo10010&#39;,&#39;liubo10010&#39;)
-
-
-
-def test_login_error(self):
-    logging.info(&#39;=======test_login_error=========&#39;)
-    l=LoginView(self.driver)
-    l.login_action(&#39;666&#39;,&#39;222&#39;)
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    unittest.main()<br>项目代码结构：</p>
-<p>二、自动化测试框架综合案例<br>1.框架功能<br>1)业务功能的封装<br>2)测试用例封装<br>3)测试包管理<br>4)截图处理<br>5)断言处理<br>6)日志获取<br>7)测试报告生成<br>8)配置参数<br>2.测试案例<br>测试环境<br>Appium-desktop 1.5.0<br>考研帮App Android版3.1.0<br>夜神模拟器 Android 7.1.2<br>Win 10 64位<br>覆盖用例<br>1.登录场景<br>用户名    密码<br>Liubo10010    Liubo10010<br>666    222<br>3.代码实现<br>1)driver配置封装<br>kyb_caps.yaml 配置表<br>platformName: Android<br>platformVersion: 7.1.2<br>deviceName: 127.0.0.1:62025<br>appname: kaoyan3.1.0.apk<br>noReset: False<br>unicodeKeyboard: True<br>resetKeyboard: True<br>appPackage: com.tal.kaoyan<br>appActivity: com.tal.kaoyan.ui.activity.SplashActivity<br>ip: 127.0.0.1<br>port: 4723</p>
-<p>desired_caps.py<br>from appium import webdriver<br>import yaml<br>import logging<br>import logging.config<br>import os</p>
-<p>CON_LOG=’../config/log.conf’<br>logging.config.fileConfig(CON_LOG)<br>logging=logging.getLogger()</p>
-<p>def appium_desired():<br>    with open(‘../config/kyb_caps.yaml’,’r’,encoding=’utf-8’) as file:<br>        data=yaml.load(file)</p>
-<pre><code>desired_caps=&#123;&#125;
-desired_caps[&#39;platformName&#39;]=data[&#39;platformName&#39;]
-desired_caps[&#39;platformVersion&#39;]=data[&#39;platformVersion&#39;]
-desired_caps[&#39;deviceName&#39;]=data[&#39;deviceName&#39;]
-
-base_dir = os.path.dirname(os.path.dirname(__file__))
-app_path = os.path.join(base_dir, &#39;app&#39;, data[&#39;appname&#39;])
-desired_caps[&#39;app&#39;]=app_path
-
-desired_caps[&#39;appPackage&#39;]=data[&#39;appPackage&#39;]
-desired_caps[&#39;appActivity&#39;]=data[&#39;appActivity&#39;]
-desired_caps[&#39;noReset&#39;]=data[&#39;noReset&#39;]
-
-
-desired_caps[&#39;unicodeKeyboard&#39;]=data[&#39;unicodeKeyboard&#39;]
-desired_caps[&#39;resetKeyboard&#39;]=data[&#39;resetKeyboard&#39;]
-
-logging.info(&#39;start app...&#39;)
-driver=webdriver.Remote(&#39;http://&#39;+str(data[&#39;ip&#39;])+&#39;:&#39;+str(data[&#39;port&#39;])+&#39;/wd/hub&#39;,desired_caps)
-driver.implicitly_wait(8)
-return driver
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    appium_desired()</p>
-<p>相对路径符号含义<br>1.“.”表示当前目录<br>2.“..” 表示当前目录的上一级目录。<br>3.“./”表示当前目录下的某个文件或文件夹，视后面跟着的名字而定<br>4.“../”表示当前目录上一级目录的文件或文件夹，视后面跟着的名字而定。<br>2)基类封装<br>baseView.py<br>class BaseView(object):<br>    def <strong>init</strong>(self,driver):<br>        self.driver=driver</p>
-<pre><code>def find_element(self,*loc):
-    return self.driver.find_element(*loc)
-
-def find_elements(self,*loc):
-    return self.driver.find_elements(*loc)
-</code></pre>
-<p>3)common公共模块封装<br>公共方法封装 : common_fun.py<br>from baseView.baseView import BaseView<br>from common.desired_caps import appium_desired<br>from selenium.common.exceptions import NoSuchElementException<br>import logging<br>from selenium.webdriver.common.by import By<br>import time,os<br>import csv</p>
-<p>class Common(BaseView):<br>    cancelBtn=(By.ID,’android:id/button2’)<br>    skipBtn=(By.ID,’com.tal.kaoyan:id/tv_skip’)<br>    wemedia_cacel=(By.ID,’com.tal.kaoyan:id/view_wemedia_cacel’)</p>
-<pre><code>def check_cancelBtn(self):
-    logging.info(&#39;==========check_cancelBtn=========&#39;)
-    try:
-        cancelBtn = self.driver.find_element(*self.cancelBtn)
-    except NoSuchElementException:
-        logging.info(&#39;no cancelBtn&#39;)
-    else:
-        cancelBtn.click()
-
-def check_skipBtn(self):
-    logging.info(&#39;=========check skipBtn=============&#39;)
-
-    try:
-        skipBtn = self.driver.find_element(*self.skipBtn)
-    except NoSuchElementException:
-        logging.info(&#39;no skipBtn&#39;)
-    else:
-        skipBtn.click()
-   
-def getTime(self):
-    self.now=time.strftime(&quot;%Y-%m-%d %H_%M_%S&quot;)
-    return self.now
-
-def getScreenShot(self,module):
-    time=self.getTime()
-    image_file=os.path.dirname(os.path.dirname(__file__))+&#39;/screenshots/%s_%s.png&#39; %(module,time)
-
-    logging.info(&#39;get %s screenshot&#39; %module)
-    self.driver.get_screenshot_as_file(image_file)
-
-def check_market_ad(self):
-    logging.info(&#39;====check_market_ad====&#39;)
-    try:
-        element=self.driver.find_element(*self.wemedia_cacel)
-    except NoSuchElementException:
-        pass
-    else:
-        logging.info(&#39;close market ad&#39;)
-        element.click()
-
-def get_csv_data(self,csv_file,line):
-    logging.info(&#39;=====get_csv_data======&#39;)
-    with open(csv_file,&#39;r&#39;,encoding=&#39;utf-8-sig&#39;) as file:
-        reader=csv.reader(file)
-        for index,row in enumerate(reader,1):
-            if index==line:
-                return row
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    driver = appium_desired()<br>    c=Common(driver)<br>    c.check_cancelBtn()<br>    # # c.check_skipBtn()<br>    # c.swipeLef()<br>    # c.swipeLef()<br>    # c.getScreenShot(“startApp”)</p>
-<p>4)业务模块封装<br>1.登录页面业务逻辑模块<br>loginView.py<br>import logging<br>from common.common_fun import Common,NoSuchElementException<br>from common.desired_caps import appium_desired<br>from selenium.webdriver.common.by import By</p>
-<p>class LoginView(Common):<br>    username_type=(By.ID,’com.tal.kaoyan:id/login_email_edittext’)<br>    password_type=(By.ID,’com.tal.kaoyan:id/login_password_edittext’)<br>    loginBtn=(By.ID,’com.tal.kaoyan:id/login_login_btn’)</p>
-<pre><code>tip_commit=(By.ID,&#39;com.tal.kaoyan:id/tip_commit&#39;)
-
-button_mysefl=(By.ID,&#39;com.tal.kaoyan:id/mainactivity_button_mysefl&#39;)
-username=(By.ID,&#39;com.tal.kaoyan:id/activity_usercenter_username&#39;)
-
-RightButton=(By.ID,&#39;com.tal.kaoyan:id/myapptitle_RightButton_textview&#39;)
-logoutBtn=(By.ID,&#39;com.tal.kaoyan:id/setting_logout_text&#39;)
-
-
-
-def login_action(self,username,password):
-    self.check_cancelBtn()
-    self.check_skipBtn()
-
-    logging.info(&#39;============login_action==============&#39;)
-    logging.info(&#39;username is:%s&#39; %username)
-    self.driver.find_element(*self.username_type).send_keys(username)
-
-    logging.info(&#39;password is:%s&#39;%password)
-    self.driver.find_element(*self.password_type).send_keys(password)
-
-    logging.info(&#39;click loginBtn&#39;)
-    self.driver.find_element(*self.loginBtn).click()
-    logging.info(&#39;login finished!&#39;)
-
-def check_account_alert(self):
-    logging.info(&#39;=====check_account_alert====&#39;)
-    try:
-        element=self.driver.find_element(*self.tip_commit)
-    except NoSuchElementException:
-        pass
-    else:
-        logging.info(&#39;close tip_commit&#39;)
-        element.click()
-
-def check_loginStatus(self):
-    logging.info(&#39;====check_loginStatus======&#39;)
-    self.check_market_ad()
-    self.check_account_alert()
-
-    try:
-
-        self.driver.find_element(*self.button_mysefl).click()
-        self.driver.find_element(*self.username)
-    except NoSuchElementException:
-        logging.error(&#39;login Fail!&#39;)
-        self.getScreenShot(&#39;login fail&#39;)
-        return False
-    else:
-        logging.info(&#39;login success!&#39;)
-        self.logout_action()
-        return True
-
-def logout_action(self):
-    logging.info(&#39;=====logout_action======&#39;)
-    self.driver.find_element(*self.RightButton).click()
-    self.driver.find_element(*self.logoutBtn).click()
-    self.driver.find_element(*self.tip_commit).click()
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    driver=appium_desired()<br>    l=LoginView(driver)<br>    l.login_action(‘liubo10010’,’liubo10010’)</p>
-<pre><code>l.check_loginStatus()
-</code></pre>
-<p>2.data数据封装<br>使用背景<br>在实际项目过程中，我们的数据可能是存储在一个数据文件中，如txt,excel、csv文件类型。我们可以封装一些方法来读取文件中的数据来实现数据驱动。<br>案例<br>将测试账号存储在account.csv文件，内容如下：<br>用户名    密码<br>Liubo10010    Liubo10010<br>666    222</p>
-<p>enumerate()简介<br>enumerate()是python的内置函数<br>enumerate在字典上是枚举、列举的意思<br>对于一个可迭代的（iterable）/可遍历的对象（如列表、字符串），enumerate将其组成一个索引序列，利用它可以同时获得索引和值<br>enumerate多用于在for循环中得到计数。<br>enumerate()使用<br>如果对一个列表，既要遍历索引又要遍历元素时，首先可以这样写：<br>list = [“这”, “是”, “一个”, “测试”,”数据”]<br>    for i in range(len(list)):<br>        print(i,list[i])</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>0 这<br>1 是<br>2 一个<br>3 测试<br>4 数据</p>
-</blockquote>
-</blockquote>
-<p>上述方法有些累赘，利用enumerate()会更加直接和优美：<br>list1 = [“这”, “是”, “一个”, “测试”,”数据”]<br>    for index, item in enumerate(list1):<br>        print(index,item)</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>0 这<br>1 是<br>2 一个<br>3 测试<br>4 数据</p>
-</blockquote>
-</blockquote>
-<p>数据读取方法封装<br>import csv</p>
-<pre><code> def get_csv_data(csv_file,line):
-    with open(csv_file, &#39;r&#39;, encoding=&#39;utf-8-sig&#39;) as file:
-        reader=csv.reader(file)
-        for index, row in enumerate(reader,1):
-            if index == line:
-                return row
-
-csv_file=&#39;../data/account.csv&#39;
-data=get_csv_data(csv_file,3)
-print(data)
-</code></pre>
-<p>utf-8与utf-8-sig两种编码格式的区别<br>UTF-8以字节为编码单元，它的字节顺序在所有系统中都是一样的，没有字节序的问题，也因此它实际上并不需要BOM(“ByteOrder Mark”)。但是UTF-8 with BOM即utf-8-sig需要提供BOM。<br>3.config文件配置<br>日志文件配置 log.config<br>[loggers]<br>keys=root,infoLogger</p>
-<p>[logger_root]<br>level=DEBUG<br>handlers=consoleHandler,fileHandler</p>
-<p>[logger_infoLogger]<br>handlers=consoleHandler,fileHandler<br>qualname=infoLogger<br>propagate=0</p>
-<p>[handlers]<br>keys=consoleHandler,fileHandler</p>
-<p>[handler_consoleHandler]<br>class=StreamHandler<br>level=INFO<br>formatter=form02<br>args=(sys.stderr,)</p>
-<p>[handler_fileHandler]<br>class=FileHandler<br>level=INFO<br>formatter=form01<br>args=(‘../logs/runlog.log’, ‘a’)</p>
-<p>[formatters]<br>keys=form01,form02</p>
-<p>[formatter_form01]<br>format=%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s</p>
-<p>[formatter_form02]<br>format=%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s</p>
-<p>4.测试用例封装<br>1.测试用例执行开始结束操作封装 myunit.py<br>import unittest<br>from common.desired_caps import appium_desired<br>import logging<br>from time import sleep</p>
-<p>class StartEnd(unittest.TestCase):<br>    def setUp(self):<br>        logging.info(‘=====setUp====’)<br>        self.driver=appium_desired()</p>
-<pre><code>def tearDown(self):
-    logging.info(&#39;====tearDown====&#39;)
-    sleep(5)
-    self.driver.close_app()
-</code></pre>
-<p>2.登录用例：test_login.py<br>from common.myunit import StartEnd<br>from businessView.loginView import LoginView<br>import unittest<br>import logging</p>
-<p>class TestLogin(StartEnd):<br>    csv_file=’../data/account.csv’</p>
-<pre><code>def test_login_liubo10010(self):
-    logging.info(&#39;======test_login_liubo10010=====&#39;)
-    l=LoginView(self.driver)
-    data=l.get_csv_data(self.csv_file,2)
-    l.login_action(data[0],data[1])
-    self.assertTrue(l.check_loginStatus())
-
-
-@unittest.skip(&#39;test_login_error&#39;)
-def test_login_error(self):
-    logging.info(&#39;======test_login_error=====&#39;)
-    l = LoginView(self.driver)
-    data = l.get_csv_data(self.csv_file, 3)
-
-    l.login_action(data[0], data[1])
-    self.assertTrue(l.check_loginStatus(),msg=&#39;login fail!&#39;)
-</code></pre>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    unittest.main()</p>
-<p>5.执行测试用例&amp;报告生成<br>run.py</p>
-<p>import unittest<br>from  BSTestRunner import BSTestRunner<br>import time,logging<br>import sys<br>path=’D:\kyb_testProject\‘<br>sys.path.append(path)</p>
-<p>test_dir=’../test_case’<br>report_dir=’../reports’</p>
-<p>discover=unittest.defaultTestLoader.discover(test_dir,pattern=’test_login.py’)</p>
-<p>now=time.strftime(‘%Y-%m-%d %H_%M_%S’)<br>report_name=report_dir+’/‘+now+’ test_report.html’</p>
-<p>with open(report_name,’wb’) as f:<br>    runner=BSTestRunner(stream=f,title=’Kyb Test Report’,description=’kyb Android app test report’)<br>    logging.info(‘start run test case…’)<br>    runner.run(discover)</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/07/app%E8%87%AA%E5%8A%A8%E5%8C%96/app%E6%A1%88%E4%BE%8B%E6%95%B4%E5%90%88%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/" data-id="ckt9tlj5w000394qd98816lpk" data-title="app案例整合实现代码" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -920,6 +588,10 @@ def test_login_error(self):
       <ul>
         
           <li>
+            <a href="/2021/09/09/http%E5%8D%8F%E8%AE%AE/">http协议</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/">web理论和网络</a>
           </li>
         
@@ -933,10 +605,6 @@ def test_login_error(self):
         
           <li>
             <a href="/2021/09/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">接口测试理论</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/">接口测试</a>
           </li>
         
       </ul>
