@@ -71,6 +71,118 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/10/python/" class="article-date">
+  <time class="dt-published" datetime="2021-09-10T09:42:26.000Z" itemprop="datePublished">2021-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/10/python/">python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Python语言<br>一、什么是python语言？<br>功能：数据分析、爬虫、web网站开发、自动化测试<br>介绍：龟叔<br>特点：胶水语言   模块，语法比较简洁上手比较快</p>
+<p>二、Python语言的语法<br>1.Python的写法流程</p>
+<p><img src="https://pic.imgdb.cn/item/613b296144eaada739ed7862.png"></p>
+<p>语法参考：<a target="_blank" rel="noopener" href="https://www.runoob.com/python3/python3-tutorial.html">https://www.runoob.com/python3/python3-tutorial.html</a></p>
+<p>2.Python的输出：<br>Print(内容)<br>3.注释：<br>#注释文字</p>
+<p>4.标识符【变量名】：<br>第一个字符必须是字母表中字母或下划线 _ 。<br>标识符的其他的部分由字母、数字和下划线组成。<br>标识符对大小写敏感。<br>变量的使用规则：</p>
+<p><img src="https://pic.imgdb.cn/item/613b299c44eaada739edd1a4.png"></p>
+<p>注意：python语法前面不要随便的缩进，其语法结构严谨</p>
+<p>5.数据类型<br>Number（数字）    int  float  str<br>String（字符串）    “”<br>List（列表）<br>Tuple（元组）<br>Set（集合）<br>Dictionary（字典）</p>
+<p>对于python的变量的数据类型检测，使用type(变量名)即可：</p>
+<p>num1=true;</p>
+<p>print(type(num1))</p>
+<p>6.运算符<br>①　算术： </p>
+<p>+  -  *  /  %</p>
+<p>②　逻辑<br>And   or    not<br>③　赋值<br>把符号  右边的赋值给左边<br>运算符    描述    实例<br>=    简单的赋值运算符    c = a + b 将 a + b 的运算结果赋值为 c<br>+=    加法赋值运算符    c += a 等效于 c = c + a<br>-=    减法赋值运算符    c -= a 等效于 c = c - a<br>*=    乘法赋值运算符    c *= a 等效于 c = c * a<br>/=    除法赋值运算符    c /= a 等效于 c = c / a<br>%=    取模赋值运算符    c %= a 等效于 c = c % a<br>**=    幂赋值运算符    c **= a 等效于 c = c ** a</p>
+<p>④　比较</p>
+<p>&lt;   &gt;=  &lt;=    !=    ==</p>
+<p>7.程序结构：<br>条件结构：<br>1.一个条件，一个结果：</p>
+<p>语法格式：<br>If   条件：<br>    结果语句；</p>
+<p>年龄18岁，则输出成年人</p>
+<p><img src="https://pic.imgdb.cn/item/613b2aa044eaada739ef3691.png"></p>
+<p>2.一个条件，2个结果：</p>
+<p>语法格式：<br>If    条件：<br>     结果语句；<br>Else:<br>    结果语句;</p>
+<p><img src="https://pic.imgdb.cn/item/613b2ad044eaada739ef7b6c.png"></p>
+<p>3.多个条件多个结果<br>If   条件1：<br>结果语句1;<br>Elif  条件2：<br>结果语句2;<br>….<br>Else:<br>    结果语句n；</p>
+<p><img src="https://pic.imgdb.cn/item/613b2aee44eaada739efa44a.png"></p>
+<p>4.条件里面套条件</p>
+<p>思考：使用python程序实现3数排大小<br>153，142,  19    高  中  低<br>思路：<br>1.先找出最大数<br>2.和-最小数-最大数=  中间数<br>实现代码：</p>
+<h1 id="实现-三数-排序-高-中-低"><a href="#实现-三数-排序-高-中-低" class="headerlink" title="实现  三数 排序 高 中 低"></a>实现  三数 排序 高 中 低</h1><p>num1=123;<br>num2=234;<br>num3=14;</p>
+<p>max1=0;#假设最大值   初始值0<br>min1=0;#最小值  0</p>
+<p>#统计三数和<br>sum1=num1+num2+num3;</p>
+<p>if num1&gt;num2 and num1&gt;num3:<br>    max1=num1;</p>
+<pre><code>if num2&gt;num3:
+    min1=num3;
+else:
+    min1=num2;
+</code></pre>
+<p>elif num2&gt;num1 and num2&gt;num3:<br>    max1=num2;<br>    if num1&gt;num3:<br>        min1=num3;<br>    else:<br>        min1=num1;<br>else:<br>    max1=num3;<br>    if num1&gt;num2:<br>        min1=num2;<br>    else:<br>        min1=num1;<br>#最大值<br>print(max1)<br>#中间值<br>print(sum1-max1-min1)<br>#最小值<br>print(min1)</p>
+<p>循环结构<br>什么是循环？<br>围着操场跑100圈</p>
+<p>初始化语句     0<br>重复的事情     跑圈<br>循环的条件    0&lt;100<br>控制循环      每跑一圈，圈数+1  （没有这个,就会变成死循环！）</p>
+<p>循环1-10：<br>#初始化语句<br>a=1;<br>#循环的条件<br>while a&lt;=10:<br>    #循环体语句<br>    print(a);<br>    #控制循环语句<br>    a=a+1;</p>
+<p>语法：<br>初始化语句；<br>While  循环的判断条件:<br>      循环体语句；<br>      控制循环语句；<br>执行顺序：<br>初始化语句；<br>循环的判断条件<br>True:<br>循环体语句；<br>控制循环语句<br>False:<br>循环结束了！</p>
+<p>案例：循环1-10奇数  </p>
+<p>案例：<br>石头剪刀布的案例（1-石头   2-剪刀  3-布）<br>规则：  石头&gt;剪刀  剪刀&gt;布  布&gt;石头<br>人：  1- 2-3<br>机器： 1–3</p>
+<p>条件结构<br>人&gt;机器：   人胜利      1 and 2   or   2 3  or   3 1<br>机器&gt;人     机器胜利<br>人=机器     平局</p>
+<p>问题：<br>如何判断人、机器出拳？——再来判断！！！</p>
+<p>知识点：<br>键盘录入——人<br>变量=input();   #把用户录入的数，赋值给左边的变量 str<br>变量2=int(变量1，base=10)   #把变量1字符串类型转换为int类型，最后赋值给变量2，变量2为int类型。</p>
+<p>随机数——机器<br>#导入random模块进来<br>import random<br>print(“下面是机器产生的数字”);<br>num=random.randint(1,5)<br>print(type(num))</p>
+<p>玩法升级：次数不限，输入0就停止，停止后输出比赛的成绩！<br>  总共玩了XX次<br>  人胜利XX次<br>  机器胜利XX次<br>  平局XX次</p>
+<p>知识点：<br>while循环、条件结构<br>随机数、键盘录入、字符串转换int 、运算符<br>案例代码：<br>import  random<br>#玩家出数字<br>print(“欢迎来到XX游戏”)<br>print(“1-石头、2-剪刀、3-布”)<br>n=1;</p>
+<p>m1=0;<br>m2=0;<br>m3=0;<br>while n!=0:<br>    print(“请出拳[1-3]:”)<br>    #玩家<br>    a=input();<br>    n1=int(a,base=10);</p>
+<pre><code>n2=random.randint(1,3)
+
+if (n1==1 and n2==2)or(n1==2 and n2==3)or(n1==3 and n2==1):
+    print(&quot;玩家胜利&quot;);
+    m1+=1;
+elif (n2==1 and n1==2)or(n2==2 and n1==3)or(n2==3 and n1==1):
+    print(&quot;机器胜利&quot;);
+    m2+=1;
+else:
+    print(&quot;平局&quot;);
+    m3+=1;
+print(&quot;是否继续:输入0结束,其他数继续&quot;)
+a1=input()
+n=int(a1,base=10);
+#判断一下 n==0
+if  n==0:
+    #打印成绩
+    print(&quot;游戏结束&quot;)
+    print(&quot;总共玩了多少次&quot;,(m1+m2+m3))
+    print(&quot;玩家胜利多少次&quot;,m1)
+    print(&quot;机器胜利多少次&quot;,m2)
+    print(&quot;平局多少次&quot;,m3)
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/10/python/" data-id="ckte6mky00000l4qd0mm565md" data-title="python" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-web/javascript" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/10/web/javascript/" class="article-date">
@@ -806,45 +918,6 @@
 
 
   
-    <article id="post-软件测试基础/软件缺陷" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/07/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7/" class="article-date">
-  <time class="dt-published" datetime="2021-09-07T08:47:03.000Z" itemprop="datePublished">2021-09-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/07/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7/">软件缺陷</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1、什么是缺陷：软件存在着不符合质量需求或违背软件用户、客户、企业意愿的问题，这就是软件缺陷 （Defect），又叫“Bug（臭虫）”。<br>2、缺陷判断标准：(1)软件未达到产品说明书标明的功能；<br>              （2）软件出现了产品说明书指明不会出现的错误；<br>              （3）软件功能超出产品说明书指明范围；<br>              （4）软件未达到产品说明书虽未指出但应达到的目标；<br>              （5）软件测试员认为软件难以理解、不易使用、运行速度缓慢，或者最终用                  不好。<br>3、表现形式：A.用户要求的功能、特性没有实现或部分实现。<br>        B.运行出错，包括运行中断、系统崩溃、界面混乱等。<br>        C.数据结果不正确、精度不够、不完整或格式不统一。<br>        D.文字显示内容不正确或拼写错误。<br>        E.系统性能低下、系统资源浪费。<br>4、缺陷报告组成：a.缺陷标题 、b.复现步骤 、c.预期结果、d.实际结果 、e.注释截图<br>5、缺陷分类：a、类型分类：功能缺陷、界面缺陷、文档缺陷、代码缺陷、算法错误、性能缺陷<br>             b、等级分类：A 类—致命缺陷，包括以下各种错误：<br>            序所引起的死机，非法退出； <br>            死循环； <br>            数据库发生死锁； <br>            因错误操作导致的程序中断； <br>            功能错误； <br>            与数据库连接错误； <br>            数据通讯错误<br>            B 类—严重缺陷，包括以下各种错误： <br>            程序错误； <br>            程序接口错误； <br>            数据库的表、业务规则、缺省值未加完整性等约束条件<br>            C 类一般缺陷，包括以下各种错误：<br>            操作界面错误（包括数据窗口内列名定义、含义是否一致）； <br>            打印内容、格式错误； <br>            简单的输入限制未放在前台进行控制； <br>            删除操作未给出提示； <br>            数据库表中有过多的空字段<br>            D 类—较小缺陷，包括以下各种错误：<br>             界面不规范；<br>             辅助说明描述不清楚；<br>             输入输出不规范；<br>             长操作未给用户提示；<br>             提示窗口文字未采用行业术语；<br>             可输入区域和只读区域没有明显的区分标志<br>6、缺陷的生命周期：提交缺陷——分配缺陷——处理缺陷——测试通过——关闭缺陷<br>                                         -–不通过—/<br>缺陷处理工具：禅道、jira、bugzilla</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/07/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7/" data-id="ckt9upi6b00013cqd5kqw7xm5" data-title="软件缺陷" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -881,6 +954,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/10/python/">python</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/10/web/javascript/">javascript</a>
           </li>
         
@@ -894,10 +971,6 @@
         
           <li>
             <a href="/2021/09/07/linux/linux/">linux</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">接口测试工具</a>
           </li>
         
       </ul>
