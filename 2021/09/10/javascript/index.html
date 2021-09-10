@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>javascript | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Javascript一、什么是javascriptJavaScript 是可插入 HTML 页面的编程代码。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。Js学习的时候，了解三部分： es语法、浏览器[BOM]对象、文档【DOM】对象二、Es语法1.js的快速入门——写法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript">
+<meta property="og:url" content="http://example.com/2021/09/10/javascript/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Javascript一、什么是javascriptJavaScript 是可插入 HTML 页面的编程代码。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。Js学习的时候，了解三部分： es语法、浏览器[BOM]对象、文档【DOM】对象二、Es语法1.js的快速入门——写法">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b242b44eaada739e680b4.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b247444eaada739e6e0bc.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b249444eaada739e70893.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b24d044eaada739e7568c.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b250644eaada739e7989e.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b255e44eaada739e8091e.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/613b25b444eaada739e8828e.png">
+<meta property="og:image" content="file:///C:/Users/ADMINI~1/AppData/Local/Temp/ksohtml13872/wps1.jpg">
+<meta property="og:image" content="file:///C:/Users/ADMINI~1/AppData/Local/Temp/ksohtml13872/wps2.jpg">
+<meta property="og:image" content="file:///C:/Users/ADMINI~1/AppData/Local/Temp/ksohtml13872/wps3.jpg">
+<meta property="article:published_time" content="2021-09-10T09:21:51.000Z">
+<meta property="article:modified_time" content="2021-09-10T09:33:57.289Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/613b242b44eaada739e680b4.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-javascript" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/10/javascript/" class="article-date">
+  <time class="dt-published" datetime="2021-09-10T09:21:51.000Z" itemprop="datePublished">2021-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      javascript
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Javascript<br>一、什么是javascript<br>JavaScript 是可插入 HTML 页面的编程代码。<br>JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。<br>这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。<br>Js学习的时候，了解三部分：<br> es语法、浏览器[BOM]对象、文档【DOM】对象<br>二、Es语法<br>1.js的快速入门——写法<br>内嵌在script标签</p>
+<script type="text/javascript">
+            alert("123")
+        </script>
+<p>外部链接<br><img src="https://pic.imgdb.cn/item/613b242b44eaada739e680b4.png"></p>
+<script type="text/javascript" src="../js/js1.js" ></script>
+<p>2.js的输出<br>Document.write( ):输出内容在网页上面<br>Console.log()  : 输出内容在控制台上面</p>
+<p>3.变量、数据类型：<br>变量：程序执行中，其值可以改变的量；变量是一个容器，存储数据。<br>Var   a=10;</p>
+<p>Var:声明变量的关键字<br>a是变量,在这个变量里面存了10</p>
+<p>变量取名的时候注意：<br>变量必须以字母开头<br>变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）<br>变量名称对大小写敏感（y 和 Y 是不同的变量） </p>
+<p>定义变量、输出变量</p>
+<script type="text/javascript">
+            //声明一个变量
+            var  num1=false;  
+            //输出变量
+            document.write(num1)
+        </script>
+
+
+<p>数据类型：<br>Boolean  ——布尔<br>string    ——字符串<br>Number   ——数字<br>Underfind—— 未定义的数据类型</p>
+<p>Js是一门弱类型的语言，数据类型的取值取决于赋给变量的值！！！</p>
+<p>①　Js的声明变量关键字是var<br>②　js同时声明两个不同的数据类型<br>③　js变量可以存放不同类型的值<br>④　js变量名声明不是必须的 </p>
+<p>typeof（）检测数据类型<br>var num1=false;<br>document.write(typeof(num1))<br>4. Js的运算符<br>算术： 加、减 、乘、除、++、–<br>单独给某个变量++或者–的时候，它会自增1或自减1；</p>
+<p>比较：&gt;、&lt;   &gt;=  !=   &lt;=<br>区分：<br>= :赋值  把右边赋值给左边<br>==：比较两个值相等，不考虑数据类型<br>=== ：考虑数据类型和值一样时，为true，否则false</p>
+<p>结果只有两种，true和false</p>
+<p>条件:     var n3=(n2&gt;n1)?n2:n1;<br>解释：如果n2值大于n1，把n2的值赋给n3<br>            否则相反<br>var n1=123;<br>            var n2=25;</p>
+<pre><code>        var n3=(n2&gt;n1)?n2:n1;
+        document.write(n3)//25
+</code></pre>
+<p>逻辑:  &amp;&amp;  ||   ！<br>逻辑运算符两边连接的是布尔类型的值</p>
+<p>赋值：    =   +=  -=  *=  /=<br>把右边值赋值 运算符左边</p>
+<p>5.程序的结构<br>程序的结构：<br>顺序结构【默认】：自上而下<br>选择结构：<br>程序自上而下执行时，遇到了什么条件，就会做出什么选择！<br>    结构<br>程序自上而下执行时，遇到了什么条件，就会做出循环！</p>
+<p>选择结构：  if….else<br>//1.初始化值<br>            var  age=10;<br>            //2.判断条件<br>            if(age&gt;=18){<br>                //3.执行语句1<br>                document.write(“可以上网”)<br>            }else{<br>                  //语句2<br>                document.write(“洗洗睡”)<br>            }<br>满足什么条件，就执行语句1，否则执行语句2  </p>
+<p>for循环：<br><img src="https://pic.imgdb.cn/item/613b247444eaada739e6e0bc.png"></p>
+<p>6.数组<br>什么是数组？——数据的容器<br>存放一组数据(多个类型的)<br>长度不是固定<br>没有赋值定义的类型都是undefined</p>
+<p>怎么声明数组？<br>var  数组名=new Array();</p>
+<p>var 数组名=new Array(“值1”，”值2”)</p>
+<script type="text/javascript">
+            var arr=new Array("张三","李四",123);
+            document.write(arr.length)
+        </script>
+
+
+
+<p>var 数组名=[“值1”,“值2”,”值3”]</p>
+<p>数组结合循环来做遍历</p>
+<script type="text/javascript">
+            var arr=new Array("张三","李四",123);
+//            document.write(arr[0])
+            for (var i=0;i<arr.length;i++) {
+                document.write(arr[i]);//0 1 2
+            }
+        </script>
+
+<p>7.字符串：“上海的自来水来自海上”<br>  CharAt():通过下标找单个字符<br>indexOf:字符串中某一个指定的字符首次出现的位置</p>
+<script type="text/javascript">
+            var str="上海的自来水来自海上";
+            //var n=str.charAt(0);
+            document.write(str.indexOf("上"))
+        </script>
+<p>substring()    提取字符串中两个指定的索引号之间的字符。<br>包前不包后</p>
+<p>详细用法：<br>手册——javascript——js字符串——</p>
+<p><img src="https://pic.imgdb.cn/item/613b249444eaada739e70893.png"></p>
+<p><img src="https://pic.imgdb.cn/item/613b24d044eaada739e7568c.png"></p>
+<p>8.函数：<br>函数是由事件驱动的<br>或者当它被调用时执行的可重复使用的代码块。<br>系统函数与自定义</p>
+<p>系统函数：<br>——————————<br>isNan()  值是数字给false，否则给true</p>
+<p>字符串转换成数字：<br>parseInt（）【重点】<br>格式： parseInt(转换的变量)<br>注意：字符串转换的数字只能是字符串开头的数字<br>parseFloat 【保留了小数】</p>
+<p>案例：<br>前提：通过js代码输出html代码<br>document.write(“<font size='24' color='red'>文字</font><br/>“)</p>
+<pre><code>    &lt;script type=&quot;text/javascript&quot;&gt;
+        for (var i=1;i&lt;=10;i++) &#123;
+            document.write(&quot;&lt;font size=&#39;24&#39; color=&#39;red&#39;&gt;文字&lt;/font&gt;&lt;br/&gt;&quot;)
+        &#125;
+    &lt;/script&gt;
+</code></pre>
+<p>请使用js来输出一个四行两列的表格！！！   偶数行为绿色，奇数行为红色</p>
+<p>自定义函数：<br>自己来写函数<br>如果你想让你的函数运行有效果，必须绑定事件【用户的动作——点击、打开了网页(加载)】</p>
+<p>函数语法：<br>function   函数名(){<br>     //代码块<br>}</p>
+<p>事件：用户的动作——点击    onclick——点击事件</p>
+<p>1.先写好函数——这个函数具有什么功能？【里面代码块决定】<br>2.往html标签【如按钮】绑定事件【点击】同时加上函数名()</p>
+<p>思路：<br>1.用html写出效果</p>
+<p>2.写个函数，通过点击事件绑定 “计算”按钮<br>    A.先获取1-2框里面的值，判断是什么类型？string–&gt;number<br>    B.获取select的id–&gt;option的value–&gt;+ 、- 、* 、/<br>    C.通过选择结构–&gt;根据用户选择+、-、*、/计算结果<br>        if..else if  …else<br>    D.获取结果框的value,然后把计算结果赋值给它<br>代码：<br>参考计算器案例</p>
+<p>9.Date对象:<br>日期对象用于处理日期和时间。</p>
+<p>定义日期：<br>var  对象名 = new  Date()；<br>或<br>var  对象名 = new  Date(“2020-04-10”)；</p>
+<p>对象名.方法名()</p>
+<p>To方法组：<br>toDateString()    把 Date 对象的日期部分转换为字符串。</p>
+<script type="text/javascript">
+            //1.创建一个Date对象
+            var d=new Date();
+
+            //2.调用方法
+            var n=d.toDateString()//转换成字符串
+            document.write(typeof(n))
+            document.write(n)
+        </script>
+<p>toString()    把 Date 对象转换为字符串。</p>
+<script type="text/javascript">
+            //1.创建一个Date对象
+            var d=new Date();
+            //2.调用方法
+            var n=d.toString()//转换成字符串
+            document.write(typeof(n))
+            document.write(n)
+        </script>
+
+<p>Get方法组：<br>getFullYear()    从 Date 对象以四位数字返回年份。</p>
+<script type="text/javascript">
+            var d=new Date();
+            var y=d.getFullYear()
+            document.write(y)
+        </script>
+<p>getDate()    从 Date 对象返回一个月中的某一天 (1 ~ 31)。<br>getDay()    从 Date 对象返回一周中的某一天 (0 ~ 6)。<br>getMonth()    从 Date 对象返回月份 (0 ~ 11)。<br>getHours()    返回 Date 对象的小时 (0 ~ 23)。<br>getMinutes()    返回 Date 对象的分钟 (0 ~ 59)。<br>getSeconds()    返回 Date 对象的秒数 (0 ~ 59)。<br>getMilliseconds()    返回 Date 对象的毫秒(0 ~ 999)。<br>getTime()    返回 1970 年 1 月 1 日至今的毫秒数。</p>
+<p>Set方法组：<br>setDate()    设置 Date 对象中月的某一天 (1 ~ 31)。<br>setMonth()    设置 Date 对象中月份 (0 ~ 11)。<br>setFullYear()    设置 Date 对象中的年份（四位数字）。</p>
+<script type="text/javascript">
+            var d=new Date();
+//            d.setDate(12);
+            d.setMonth(1)//0
+            document.write(d)
+        </script>
+<p>10.math(算数)对象：<br><img src="https://pic.imgdb.cn/item/613b250644eaada739e7989e.png"><br><img src="https://pic.imgdb.cn/item/613b255e44eaada739e8091e.png"></p>
+<p>abs(x)    返回数的绝对值。<br>X：表示参数<br>floor(x)    对数进行下舍入。<br>ceil(x)    对数进行上舍入。<br>max(x,y)    返回 x 和 y 中的最高值。<br>min(x,y)    返回 x 和 y 中的最低值。<br>随机数：<br>random()    返回 0 ~ 1 之间的随机数。<br>四舍五入：<br>round(x)    把数四舍五入为最接近的整数。</p>
+<p>保留多少位小数：<br>var  d=12.345232;<br>document.write(d.toFixed(3))</p>
+<p>三、BOM浏览器对象模型<br>手册看这里<br>1.定义：<br>浏览器对象模型 (BOM)， 使 JavaScript 有能力与浏览器“对话”、交互。<br>浏览器对象模型（Browser Object Model）尚无正式标准。<br>2.BOM的分类</p>
+<p>1.window对象———-是浏览器对象模型中的顶层对象<br>2.navigator对象———包含有关访问者的信息<br>3.screen对象————-包含用户屏幕的信息<br>4.history对象———–包含浏览器历史<br>5.location对象———-用于获取当前页面地址<br>6.document对象———-操作HTML标签、cookie</p>
+<p>3.Window对象<br>所有浏览器都支持 window 对象。它表示浏览器窗口。<br>prompt函数：用户点击确定拿到输入内容，点击取消啥也没有<br>    对话框</p>
+<script type="text/javascript">
+            var n=prompt("请输入.....")
+            document.write(n)
+        </script>
+
+<p>alert函数——警告框</p>
+<script type="text/javascript">
+            alert("123")
+        </script>
+
+<p>confirm函数——确认框</p>
+<script type="text/javascript">
+            var n=confirm("你确定吗？")//返回结果布尔类型
+            if(n==true){
+                for(var i=1;i<=10;i++){
+                    alert(i)
+                }
+            }else{
+                document.write("你好呀")
+            }
+            document.write(n)
+        </script>
+
+<p>close函数<br>    关闭顶层窗口</p>
+<script type="text/javascript">
+            function fn1(){
+                window.close()
+            }
+        </script>
+<p>​    </p>
+<p>open函数<br>    格式：<br>        window.open(“弹出窗口的url”,”窗口名称”,”窗口特征1=值,窗口特征2=值”);<br>    参数<br>    <img src="https://pic.imgdb.cn/item/613b25b444eaada739e8828e.png"></p>
+<p>​    </p>
+<script type="text/javascript">
+            function fn1(){
+                for (var i=1;i<=10;i++) {
+                    window.open("https://www.baidu.com",i,"height=200px,width=300px");
+                }
+            }
+        </script>
+<p>4.Location对象<br>window.location 对象用于获得当前页面的地址 (URL)，并把浏览器重定向到新的页面。</p>
+<script type="text/javascript">
+            document.write(location.search)
+            document.write(location.href)
+            document.write(location.host)
+            document.write(location.port)
+            document.write(location.protocol)
+        </script>
+<p>search：？问号后面的<br>href：完整的<br>host:主机名<br>port:当前的端口号<br>protocol：返回当前的协议</p>
+<p>1.加载一个新的网页——assign（url）<br>注意：历史记录有记录  ctrl+H</p>
+<script type="text/javascript">
+            function fn1(){
+                location.assign("https://www.baidu.com")
+            }
+        </script>
+<p>2.刷新当前页面 reload()</p>
+<script type="text/javascript">
+            function fn1(){
+                location.reload()
+            }
+        </script>
+<p>3.替换当前页面<br>    replace(url)——历史记录会覆盖现有的历史记录<br>5.History对象</p>
+<script type="text/javascript">
+            function fn1(){
+                history.back()//后退
+            }
+            function fn2(){
+                history.forward()//前进
+            }
+        </script>
+<p>6.navigator对象的介绍<br>window.navigator 对象包含有关访问者浏览器的信息。</p>
+<p>appName 属性返回浏览器的应用程序名称：<br>appCodeName 属性返回浏览器的应用程序代码名称：<br>appVersion  返回浏览器的平台和版本信息<br><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_window_navigator.asp">https://www.w3school.com.cn/js/js_window_navigator.asp</a><br>7.screen 对象包含有关用户屏幕的信息。<br>width：宽度<br>height:高度<br>screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去诸如窗口工具条之类的界面特征。<br>8.延时器与定时器【重点】<br>设定的时间间隔之后来执行代码<br>而不是在函数被调用后立即执行</p>
+<p>setTimeout()     未来的某时执行代码<br>var t=setTimeout(“javascript语句”,毫秒)</p>
+<p>案例代码：设置延时器与清除延时器</p>
+<script type="text/javascript">
+            var t;//为什么t声明在这儿？？
+            function fn1(){
+                alert("123")
+
+            }
+            function fn2(){
+                t=setTimeout("fn1()",3000);
+            }
+            function fn3(){
+                clearTimeout(t);                
+            }
+        </script>
+<p>定时器：<br>tt=setInterval(函数名,毫秒值);<br>    当我隔多少秒调用这个函数，周期性的调用<br>clearInterval(tt)<br>    清除定时或者延时的效果用这个</p>
+<p>四、DOM对象</p>
+<h2 id="1什么是DOM？"><a href="#1什么是DOM？" class="headerlink" title="1什么是DOM？"></a><strong>1什么是DOM？</strong></h2><p>Js通过DOM来操作HTML标签元素！</p>
+<p>文档对象模型图：</p>
+<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml13872\wps1.jpg" alt="img"> </p>
+<p>2.通过js来获取html标签、属性【控制它】</p>
+<p>A.通过id选择器来获取html标签的控制权，只能获取1个，而且是第1个。</p>
+<script type="text/javascript">            var pp1=document.getElementById("p1");            document.write(pp1.innerText)        </script>
+
+<p>innerText:获取、修改文本</p>
+<p>B. 通过name属性来获取html的控制权， 能获取多个——结果是一个数组</p>
+<script type="text/javascript">             var arr=document.getElementsByName("sex");             for (var i=0;i<arr.length;i++) {             document.write(arr[i].value)             }        </script>
+
+<p>C. 通过指定标签——结果是数组</p>
+<p>D. 通过类名——结果是数组</p>
+<p>Innertext与innerHTML的区别！！！</p>
+<p>通过js的style对象来更改html标签的属性值：</p>
+<p>Js对象.style.属性=”属性值”</p>
+<script type="text/javascript">            document.getElementById("p1").style.color="red"        </script>
+
+<p>Js.src=”地址”  通过js来设置图片的路径</p>
+<p>通过className来获取、设置html标签的属性、属性值；</p>
+<p>存在问题：  获得是underfind</p>
+<p>关于js获取html DOM 节点</p>
+<p>注意：notetype【节点的类型】、nodeValue[节点的值]、nodeName</p>
+<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml13872\wps2.jpg" alt="img"> </p>
+<p>空格或者换行被看做文本节点。</p>
+<p><img src="file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml13872\wps3.jpg" alt="img"> </p>
+<p>获取第一个子节点</p>
+<script type="text/javascript">            var uu1=document.getElementById("u1")            alert(uu1.firstChild.nodeName)        </script>
+
+<p>节点列表：</p>
+<p>firstChild</p>
+<p>​    获取元素的首个子节点</p>
+<p>​    var aa=父节点对象.firstChild</p>
+<p>​    注意</p>
+<p>​        （1）.子节点并不一定都是元素节点，还有可能包含文本节点或者注释节点等节点。</p>
+<p>​        （2）. </p>
+<p>​    注意：关于拿不到nodeValue的值</p>
+<p>​        </p>
+<p>lastChild</p>
+<p>​    获取元素最后一个节点</p>
+<p>childNodes</p>
+<p>​    获取元素的节点列表</p>
+<p>​    数组</p>
+<p>​    var arr=对象名.childNodes()</p>
+<p>​    对象名.childNodes[1]</p>
+<p>previouSibling</p>
+<p>​    获取已知节点的前一个节点</p>
+<p>nextSibling</p>
+<p>​    获取已知节点的后一个节点</p>
+<p>parentNode    </p>
+<p>​    获取已知节点的父节点</p>
+<p>通过js操作html的属性：</p>
+<p>获取属性节点值</p>
+<p>​    元素节点.getAttribute(属性名)</p>
+<p>设置属性节点</p>
+<p>​    元素节点.setAttrbute(属性名，属性节点)</p>
+<p>删除属性节点</p>
+<p>​    元素节点.removeAttribute(属性名，属性节点)</p>
+<p>通过数组的方式去操作</p>
+<p>​      每个 HTML 属性—-是属性节点</p>
+<p>​        var dd=d1.attributes;</p>
+<p>​            元素对象.attributes   拿到某个元素节点里面所有的属性节点—–数组</p>
+<p>​        dd[下标].nodeName</p>
+<p>​            拿到指定元素的指定属性的名称</p>
+<p>​        dd[下标].nodevalue</p>
+<p>​            拿到指定元素的指定属性的值</p>
+<p>​        dd[下标].nodeType</p>
+<p>​            </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/10/javascript/" data-id="ckte5xbih0000ewqd13eab6c0" data-title="javascript" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/09/http%E5%8D%8F%E8%AE%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">http协议</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/10/javascript/">javascript</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/09/http%E5%8D%8F%E8%AE%AE/">http协议</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/08/web%E7%90%86%E8%AE%BA%E5%92%8C%E7%BD%91%E7%BB%9C/">web理论和网络</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/07/linux/linux/">linux</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">接口测试工具</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
